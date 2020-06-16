@@ -6,13 +6,15 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0007_homepage_commit_6'),
+        ("home", "0007_homepage_commit_6"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='homepage',
-            name='commit8',
-            field=models.DecimalField(blank=True, decimal_places=10, max_digits=30, null=True),
+            model_name="homepage",
+            name="commit8",
+            field=models.DecimalField(
+                blank=True, decimal_places=10, max_digits=30, null=True
+            ),
         ),
     ]
