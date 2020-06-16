@@ -23,9 +23,10 @@ class CustomText(models.Model):
 
 class HomePage(models.Model):
     body = models.TextField()
-    commit_2 = models.CharField(max_length=256, null=True, blank=True,)
+    commit_2 = models.CharField(null=True, blank=True, max_length=256,)
     commit_3 = models.BigIntegerField(null=True, blank=True,)
     commit_4 = models.BigIntegerField(null=True, blank=True,)
+    commit_5 = models.DateTimeField(auto_now=True, null=True, blank=True,)
 
     @property
     def api(self):
