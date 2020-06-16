@@ -28,6 +28,9 @@ class HomePage(models.Model):
     commit_4 = models.BigIntegerField(null=True, blank=True,)
     commit_5 = models.DateTimeField(auto_now=True, null=True, blank=True,)
     commit_6 = models.CharField(max_length=256, null=True, blank=True,)
+    commit8 = models.DecimalField(
+        max_digits=30, decimal_places=10, null=True, blank=True,
+    )
 
     @property
     def api(self):
