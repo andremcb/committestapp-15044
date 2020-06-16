@@ -32,6 +32,7 @@ class HomePage(models.Model):
         null=True, blank=True, max_digits=30, decimal_places=10,
     )
     test_1 = models.BooleanField(null=True, blank=True,)
+    tst3 = models.DateField(null=True, blank=True,)
 
     @property
     def api(self):

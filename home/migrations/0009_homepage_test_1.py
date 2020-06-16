@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0008_homepage_commit8'),
+        ("home", "0008_homepage_commit8"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='homepage',
-            name='test_1',
+            model_name="homepage",
+            name="test_1",
             field=models.BooleanField(blank=True, null=True),
         ),
     ]
